@@ -200,14 +200,14 @@ def user_stats(df, city):
 def raw_df(df):
     """Display 5 lines of raw data."""
     
-    i = 0
+    raw_line = 0
     while True:
         raw_request = input('Would you like to see 5 lines of raw data?(Yes or No): ').lower()
         y_n_list = ['yes','no']
         if raw_request in y_n_list:
             if raw_request == 'yes':
-                print(df.iloc[i:i+5])
-                i += 5
+                print(df.iloc[raw_line:raw_line+5])
+                raw_line += 5
                 continue
         else:
             print('is that a yes or no?')
