@@ -3,7 +3,7 @@
 ### Date created
 25 - January - 2021
 ### Project Title
-Bikeshare stats
+Bikeshare stats - Udacity
 
 ### Description
 The BikeShare project provides descriptive statistics regarding the rental of bikes from the bike-sharing-system Motivate. Data can be filtered and analyzed for Chicago, New York City and Washington.
