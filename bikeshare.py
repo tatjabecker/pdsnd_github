@@ -200,18 +200,18 @@ def user_stats(df, city):
 def raw_df(df):
     """Display 5 lines of raw data.
     
-    Args: df - (str)name of the dataframe with raw data that has been filtered with get_filters() function
+        Args: df - (str)name of the dataframe with raw data that has been filtered with get_filters() function
     
     """
-
-    i = 0
+    
+    raw_line = 0
     while True:
         raw_request = input('Would you like to see 5 lines of raw data?(Yes or No): ').lower()
-        y_n_list = ['yes','no']
-        if raw_request in y_n_list:
+        yes_no_list = ['yes','no']
+        if raw_request in yes_no_list:
             if raw_request == 'yes':
-                print(df.iloc[i:i+5])
-                i += 5
+                print(df.iloc[raw_line:raw_line+5])
+                raw_line += 5
                 continue
         else:
             print('is that a yes or no?')
