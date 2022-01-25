@@ -198,7 +198,11 @@ def user_stats(df, city):
 
 
 def raw_df(df):
-    """Display 5 lines of raw data."""
+    """Display 5 lines of raw data.
+    
+        Args: df - (str)name of the dataframe with raw data that has been filtered with get_filters() function
+    
+    """
     
     raw_line = 0
     while True:
