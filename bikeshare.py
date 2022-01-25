@@ -203,8 +203,8 @@ def raw_df(df):
     raw_line = 0
     while True:
         raw_request = input('Would you like to see 5 lines of raw data?(Yes or No): ').lower()
-        y_n_list = ['yes','no']
-        if raw_request in y_n_list:
+        yes_no_list = ['yes','no']
+        if raw_request in yes_no_list:
             if raw_request == 'yes':
                 print(df.iloc[raw_line:raw_line+5])
                 raw_line += 5
